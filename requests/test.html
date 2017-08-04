@@ -1,0 +1,247 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <TITLE>Log In to Fidelity NetBenefits</TITLE>
+    <META name="OASIS" content="438144.3.0">
+    <META http-equiv="Expires" content="Mon 13 Jun 1988 00:00:00 GMT">
+    <META http-equiv="pragma" content="no-cache">
+    <META name="eReview" content="694769.2.0">
+	<!--[if lt IE 9]>
+    <script src="/ftgw/pages/js/common/html5shiv.js"></script>
+	<![endif]-->
+    <link href="/ftgw/pages/css/common/base.css" rel="stylesheet" type="text/css" media="screen, print"/>
+
+    <link href="/ftgw/pages/css/nbpart/defaultWeb/nbpartStyle.css" rel="stylesheet" type="text/css" media="screen, print"/>
+<!--[if lt IE 8]>
+	<style type="text/css">
+	/* a{padding-left:10px;} commented this for nbpart_login.vm*/
+        label{margin: 0; padding: 0; zoom: 0;}
+        h2{margin: 0; padding: 0; zoom: 0;}
+        ol{line-height: 15px;padding-left:10px;margin-left:10px;}
+
+        button b{ margin: 0; padding: 0;}
+      
+        #usernameBubble, #passwordBubble{
+            *display: inline;
+            zoom: 1;
+        }
+        DIV.lockIcon, #viewUpgradeBox #loginBox li{
+            display:inline-block;
+           *display: inline;
+            zoom: 1;
+            margin-top:-19px;
+        }
+        #nbAciLogin  h2{
+            padding-top:40px;
+        }
+        #nbAciLogin #loginBox ol{
+            padding-top:0px;
+        }
+        #nbAciLogin #legend, #viewUpgradeBox #legend{
+            margin-left:-8px;
+            padding-right:2px;
+        }
+        #loginBoxDefault label{
+            padding-left:-20px;
+        }
+        form.li.error.strong{
+        	width:160px;
+        }
+        #page-header h2{
+        	padding-bottom:17px;
+        	padding-top:17px;  
+        	margin-top:0.5em;      	
+        }
+        #column-left{
+        	margin:0px 0px;
+        }
+        #column-right{
+        	margin-top:25px;
+        }
+        #verticalRule{
+        	margin-top:25px;
+        }
+        #loginBoxDefault #Login form li{
+        	margin-bottom:0px;
+        }
+        #loginBoxDefault #Login ol{
+        	padding-left:0px;
+        	margin-left:0px;
+        }
+       
+        #loginBoxDefault li.error strong{
+        	padding-bottom : 0px;
+        	margin:-14px 0px 5px 130px;
+        }
+        #loginLink a, #havingTroubleLink a,#returnToHomePageLink a,#resetLink a,#cancelLink a{
+        	padding-left:10px;
+        }
+        form .confirm input{
+        	bottom:0.3em;
+        }
+	</style>
+	<![endif]-->
+</head>
+<body>
+<header>
+    <figure>
+        <img src="/ftgw/pages/images/nbpart/defaultWeb/nblogo_BigN.gif" border="0" hspace="0" vspace="0" alt="NB Home" />
+    </figure>
+</header>
+
+<article id="column-left">
+    <section id="page-header">
+        <h2>Log In<div class="lockIcon"></div></h2>
+	<p>If you have an account on Fidelity.com use the same username and password.</p>
+    </section>
+    
+
+	
+
+
+
+<section id="loginBoxDefault">
+    <form id="Login" name="Login" method="POST"	action="/ftgw/Fas/Fidelity/NBPart/Login/Response"	autocomplete="off" novalidate="novalidate">
+        <input type="hidden" name="DEVICE_PRINT" value=""/>
+
+        <ol>
+            <li class="text">
+                <label for="username">Username</label>
+                <section class="showHide">
+                    <input tabindex="1" id="notSet" class="obfuscate" name="notSet" type="text" maxlength="15" />
+                </section>
+                	            	<input tabindex="1" class="obfuscate" id="userId" name="ssn" type="text" maxlength="15" required="required"
+                        data-error-empty="Please enter your username" data-error-invalid="This field is not properly formatted"/>
+	                           <div id="usernameBubble" class="bubble" >
+    <a href="#">
+        <div class="bubbleArea">
+            <span class="bubbleProperties">
+                <img class="bubbleArrow" alt="" src="/ftgw/pages/images/common/arrow_top_blk.gif" />
+                For U.S. employees, your username (up to 15 characters) can be any customer identifier you've chosen or your Social Security number (SSN).<br/><br/>If you use your SSN to log in, please create a personalized username for added security. Use the Need Help links to the right to change your login information.<br/><br/>For outside the U.S. employees, your Participant Number is your Username and if you created a PIN previously, it is now considered your Password.
+            </span>
+        </div>
+    </a>
+</div>            </li>
+
+            <li class="confirm" id="loginConfirm">
+	            <label for="confirm">
+	                <input tabindex="5" type="hidden" id="SavedIdInd" name="SavedIdInd"
+	                       	                       value="N"
+	                       	                       />
+	                       <input id="confirm" type="checkbox" name="confirm"
+	                       	                       />&nbsp;<a href="javascript:openMediumWindow('/ftgw/pages/retail/html/include/RememberIDInfo.html')"
+            tabindex="6">Remember Me</a>
+ 			
+                </label>
+            </li>   
+            
+            <li class="showHide" ><a tabindex="7" id="useSavedId" href="#">Use a saved username</a>    
+            <li class="password">
+                <label for="password">Password</label>
+                <input tabindex="2" id="password" type="password" name="pin" required="required" maxlength="20" data-error-empty="Please enter your password" data-error-invalid="This field is not properly formatted"/>
+                <div id="passwordBubble" class="bubble" tabindex="8">
+    <a href="#">
+        <div class="bubbleArea">
+            <span class="bubbleProperties">
+                <img class="bubbleArrow" alt="" src="/ftgw/pages/images/common/arrow_top_blk.gif" />
+                    	Use 6 to 20 letters, numbers, and/or special characters
+            </span>
+        </div>
+    </a>
+</div>            </li>
+
+            <li class="buttons">
+                <button tabindex="2" type="submit">Log In</button>
+            </li>
+            <li>
+               <label class="nbWorldWide"><p class="bulletIconWW"></p>    <a tabindex="9" href="/ftgw/Fas/Fidelity/IspCust/Login/Init">Log in to NetBenefits<sup>&reg;</sup> Worldwide</a></label>
+            </li>
+        </ol>
+    </form>
+</section>
+    <section id="eReview">694769.2.0</section>
+</article>
+ <section id="verticalRule"></section>
+
+<article id="column-right">
+    <section id="register-help">
+        <h2>New User?</h2>
+            <p><a href="/ftgw/Fas/Fidelity/NBPart/IdentifyUser/Init?intent=nur" tabindex="12"  id="registerNow">Register Now</a></p>
+            <h2>Need Help Logging in?</h2>
+            <p><a href="/ftgw/Fas/Fidelity/NBPart/IdentifyUser/Init" tabindex="13"  id="havingTroubleLink">Having trouble with your username or password?</a></p>
+            <p><a href="javascript:openFooterPopup('/ftgw/pages/fesco/html/FAQ.html', 'FAQ1', 580, 420)" tabindex="14">Frequently Asked Questions</a></p>
+            <p><a href="javascript:openFooterPopup('https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/onlinesecurityatfidelity', 'OnlineSecurity', 1000, 800)" tabindex="15">Online Security</a></p>
+		</section>
+	</article>
+
+<section id="copyrightAndAddress" >
+    <p>&copy; 1996-<script type="text/javascript">var currentYear = new Date(); copyrightYear=currentYear.getFullYear(); document.write(copyrightYear);</script>&nbsp;FMR LLC. All rights reserved.</p>
+	<p >By using or logging into this website, you consent to the use of cookies as described in&nbsp;<a href="https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/privacypolicy">Fidelity's Privacy Policy.</a></p>
+    <p >Covered, in part, by U.S. patent number 5,991,878</p>       <p class="conditions">Fidelity Brokerage Services LLC, Member NYSE, SIPC, 900 Salem Street Smithfield, RI 02917</p>
+    <p>
+        <a href="javascript:openFooterPopup('https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/termsofuse', 'Legal', 1000, 800);">Terms of Use</a>
+        |&nbsp;<a href="javascript:openFooterPopup('https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/privacypolicy', 'Privacy', 1000, 800);">Privacy</a>
+        |&nbsp;<a href="javascript:openFooterPopup('https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/fidelitycustomerprotectionguarantee', 'Protection', 1000, 800);">The Fidelity Customer Protection Guarantee</a>&nbsp;
+        |&nbsp;<a href="javascript:openFooterPopup('https://nb.fidelity.com/public/nb/default/resourceslibrary/articles/onlinesecurityatfidelity', 'Security', 1000, 800);">Security</a>&nbsp;
+    </p>
+</section>
+<script type="text/javascript" src="/ftgw/pages/js/common/jquery.js"></script>
+<script type="text/javascript" src="/ftgw/pages/js/common/main.js"></script>
+<script language="javascript" src="/ftgw/pages/capability/common/defaultWeb/js/rsa/device_print.min.js"></script>
+
+<script>
+function getUrlParams(){
+    var url = window.location.href;
+    var AuthOrigURL;
+    var AuthRedURL;
+    var param3;
+
+    //url+='?param1=value1&param2=value2';
+    AuthOrigURL = getParameterByName("AuthOrigURL", url);
+    AuthRedURL = getParameterByName("AuthRedURL", url);
+
+    if(AuthOrigURL != null && AuthRedURL != null){
+
+        param3 = getParameterByName("param3", url); // collects the parameter
+        alert(param3);
+
+        if(param3 == null){
+            param3='&param3=value3';
+            location.hash=url+param3; //no page reload
+            //alert('new param added');
+        }
+    }
+}
+
+function getParameterByName( name, href ){
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)";
+    var regex = new RegExp( regexS );
+    var results = regex.exec( href );
+
+    if( results == null ) 
+        return null; 
+    else 
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+//gets called on page load
+$(document).ready(function (){
+	if($('[name="DEVICE_PRINT"]').length != 0){
+	   $('[name="DEVICE_PRINT"]').val(add_deviceprint())
+ //   	post_deviceprint('Login');
+	}
+	
+	//Frame buster for all default web
+    if(top.location != location){
+        // Netbenefits upgrade page is called within a frame, we do not want to bust it 
+    	if($("#embedNoteBox").length == 0){
+        	top.location.href = document.location.href;
+        }
+    }
+});
+</script><script language="javascript" src="/ftgw/pages/js/nbpart/defaultWeb/nbpart.js"></script></BODY>
+</HTML>
